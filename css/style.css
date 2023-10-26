@@ -9,3 +9,17 @@ box-sizing: border-box;
 .fuenteTexto{
     font-family: 'Poppins', sans-serif;
 }
+
+.btnPagAnt{
+    background-color: #3f0090;
+    border: #3f0090;
+    color: white;
+}
+
+.aPagAnt{
+    text-decoration: none;
+}
+
+:hover .aPagAnt{
+    color: white;
+}
