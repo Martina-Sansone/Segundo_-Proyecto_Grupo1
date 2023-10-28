@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+    }
+
+.card-design{
+    background-color: blueviolet;
+    height: 650px;
+    border-radius: 1%;
+}
+
+.card-container{
+    position: relative;
+    transition: 1%;
+    cursor: pointer;
+}
+
+.card-container:hover{
+    transform: translateY(-18px);
+    cursor: pointer;
+}
+
+.card-container {
+    position: relative;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+
+body {
+    font-family: sans-serif;
+    padding: 120px 20px 0;
+}
+
+.header{
+    background-color: #01042d;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    height: 80px;
+}
+
+.nav-menu-link{
+    color: white;
+    text-decoration: none;
+    padding: 2px 3px;
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.nav-menu-link:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.logo{
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-link{
+    height: 20px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.Categoria{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    
+}
+
+.Categoria-menu{
+    font-size: 15px;
+    margin: 10px 10px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.Categoria-menu-link{
+    color: white;
+    text-decoration: none;
+    padding: 2px 3px;
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.Categoria-menu-link:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+
+.nav-categoria{
+    display: flex;
+    justify-content: space-around;
+
+
+    height: 40px;
+
+    background-color: #3f0090;
+
+}
+
+.search{
+    background-color: #3f0090;
+    height: 32px;
+    right: 40px;
+    font-family: 'Poppins', sans-serif;
+    border: #01042d;
+
+}
+
+
+
