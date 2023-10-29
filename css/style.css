@@ -25,7 +25,6 @@ box-sizing: border-box;
 }
 
 
-/* Estilos pagina princpal hero */
 /* hover zoom */
 .carousel-inner img {
     transition: transform 0.3s ease;
@@ -56,13 +55,18 @@ box-sizing: border-box;
     top: 1%;
     left: 80%;
     transform: translate(-50%, -250%);
+    color: white; /* Color del texto, puedes ajustarlo según tus preferencias */
+    text-align: center;
+    margin: 0; /* Elimina el margen predeterminado del encabezado */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+  }
+
+  .titulo-largo {
+    font-size: 2.1em;
     color: white; 
     text-align: center;
     margin: 0; 
     z-index: 1; 
-  }
-  .titulo-largo {
-    font-size: 2.1em;
   }
   .titulo-corto{
     font-size: 3em;
