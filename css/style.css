@@ -24,3 +24,50 @@ box-sizing: border-box;
     color: white;
 }
 
+
+/* hover zoom */
+.carousel-inner img {
+    transition: transform 0.3s ease;
+  }
+
+  .carousel-inner img:hover {
+    transform: scale(1.04);
+  }
+
+
+/* /* Hover color  */
+  
+  .carousel-inner img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.carousel-inner:hover img {
+	opacity: .9;
+}
+
+.carousel-inner {
+    position: relative;
+  }
+  
+  .carousel-inner h2 {
+    position: absolute;
+    top: 1%;
+    left: 80%;
+    transform: translate(-50%, -250%);
+    color: white; /* Color del texto, puedes ajustarlo según tus preferencias */
+    text-align: center;
+    margin: 0; /* Elimina el margen predeterminado del encabezado */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+  }
+
+  .titulo-largo {
+    font-size: 2.1em;
+    color: white; 
+    text-align: center;
+    margin: 0; 
+    z-index: 1; 
+  }
+  .titulo-corto{
+    font-size: 3em;
+  }
