@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+
+.body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.main{
+    background-color: #01042d;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    background-color: #23275D;
+}
+
+.card{
+    width: 100%;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card-img-top{
+    width: 100%;
+    height: 210px;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.card-img-top img{
+    width: 110%;
+}
+
+.card .contenido{
+    padding: 5px;
+    text-align: ;
+    color: white;
+    background-color: #001994;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.card-text{
+    line-height: 1;
+    color: #68FF00;
+    font-size: medium;
+}
+
+.card-title{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+.descrip{
+    width: 100%;
+    height: 70px;
+}
+
+.descrip-desde{
+    line-height: 1,5;
+    color: grey;
+    font-size: small;
+}
+
+.precio{
+    color: white;
+    line-height: 0,1;
+    font-size: larger;
+    
+}
+
+.favorito{
+    display: flex;
+    justify-content;
+    color: grey;
+    font-size: small;
+}
+
+.vinculo{
+    text-decoration: none;
+}
+
+.titulo{
+    color: white;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Base{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    background-color: #23275D;
+    
+}
+.description{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+.Sub-titulo{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+
+}
+
+.container-footer{
+    width: 100%;
+    margin: auto;
+
+    max-width: 1400px;
+    flex-wrap: wrap;
+    background-color: #3f0090;
+}
+
+.col{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.CopyRight{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.container-carousel{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    background-color: #23275D;
+}
