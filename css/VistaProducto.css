@@ -1,0 +1,43 @@
+/* Vista de producto css */
+.vista-producto-main {
+    background-color: #01042d;
+    color: white;
+  }
+    .card-mature {
+      background-color: #01042d;
+      color: white;
+      border-width: 1px;
+      border-style: solid;
+    }
+  
+  .boton-juego-base button{
+    background-color:#001994;
+    border-color:#001994 ;
+    color: white;
+  }
+  
+  button.btn-comprar {
+    background-color: #3f0090;
+    border-color: #3f0090;
+  }
+  button.btn-carrito {
+    background-color: #3f0090;
+    border-color: #3f0090;
+  }
+  
+  .style-producto button:hover {
+    background-color: #290557 ;
+    border-color:  #290557 ;
+    color: white;
+  }
+
+.caracteristas li{
+list-style: none;
+}
+
+.caracteristas ul li {
+    border-bottom: 1px solid #ccc; /* Agrega una línea inferior de color gris claro */
+    padding-bottom: 8px; /* Espacio entre la línea y el texto */
+    margin-bottom: 8px; /* Espacio entre elementos de la lista */
+  }
+  
