@@ -37,6 +37,21 @@
     object-fit: cover;
     background-position: bottom center;
   }
+
+
+.btn-gamevault{
+  background-color: #3f0090;
+}
+
+.texto-fuente{
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-check-input:checked{
+  background-color: #3f0090;
+  border: #3f0090;
+}
+
   .background{
     background-color:#3f0090;
   }
