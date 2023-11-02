@@ -36,7 +36,15 @@ list-style: none;
 }
 
 .caracteristas ul li {
+
+    border-bottom: 1px solid #ccc; /* Agrega una línea inferior de color gris claro */
+    padding-bottom: 8px; /* Espacio entre la línea y el texto */
+    margin-bottom: 8px; /* Espacio entre elementos de la lista */
+  }
+  
+
     border-bottom: 1px solid #ccc; 
     padding-bottom: 8px; 
     margin-bottom: 8px; 
   }
+

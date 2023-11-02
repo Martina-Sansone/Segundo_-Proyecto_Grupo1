@@ -3,6 +3,10 @@
 
 .nav-color{
     background-color: #01042d;
+    position: absolute;
+     width: 100%;
+     top: 0;
+     z-index: 100;
 }
 /* hover zoom */
 .carousel-inner img {
@@ -29,10 +33,11 @@
   }
 
   .carousel-inner img {
-    height: 85.5vh; 
+    height: 100vh; 
     object-fit: cover;
     background-position: bottom center;
   }
+
 
 .btn-gamevault{
   background-color: #3f0090;
@@ -46,3 +51,7 @@
   background-color: #3f0090;
   border: #3f0090;
 }
+
+  .background{
+    background-color:#3f0090;
+  }
