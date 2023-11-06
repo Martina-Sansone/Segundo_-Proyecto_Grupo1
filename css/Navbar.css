@@ -6,40 +6,13 @@
     
     }
 
-.card-design{
-    background-color: blueviolet;
-    height: 650px;
-    border-radius: 1%;
-}
-
-.card-container{
-    position: relative;
-    transition: 1%;
-    cursor: pointer;
-}
-
-.card-container:hover{
-    transform: translateY(-18px);
-    cursor: pointer;
-}
-
-.card-container {
-    position: relative;
-    transition: 1s;
-    cursor: pointer;
-}
-
-
-
 body {
     font-family: sans-serif;
-    padding: 120px 20px 0;
 }
 
 .header{
     background-color: #01042d;
-    height: 80px;
-    position: fixed;
+    height: 96px;
     width: 100%;
     top: 0;
     left: 0;
@@ -58,8 +31,6 @@ body {
     padding: 2px 3px;
     border-radius: 3px;
     font-family: 'Poppins', sans-serif;
-    
-    
 }
 
 .nav-menu-link:hover{
@@ -81,6 +52,15 @@ body {
     text-transform: uppercase;
     width: max-content;
 }
+.nav-menu-item-categoria{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    display: none;
+}
+
 .logo{
     padding: 0 40px;
     line-height: 80px;
@@ -143,5 +123,130 @@ body {
 
 }
 
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+
+}
+
+@media (max-width:768px){
+    
+    .header{
+        height: 60px;
+        position: sticky;
+    }
+
+
+    .nav-menu-link:hover{
+        background: none;
+        color: #3f0090;
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #3f0090;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100%-60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+        line-height: 70px;
+        display: none;
+    }
+
+    .nav-menu-item-categoria{
+        font-size: 18px;
+        margin: 0 10px;
+        line-height: 80px;
+        text-transform: uppercase;
+        width: max-content;
+        display: block;
+    }
+
+    .logo{
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+    .nav-link{
+        height: 20px;
+        margin-top: 10px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        display: none;
+    }
+    
+    .Categoria{
+        display: flex;
+        margin-right: 40px;
+        list-style: none;
+        display: none;
+        
+    }
+    
+    .Categoria-menu{
+        font-size: 15px;
+        margin: 10px 10px;
+        line-height: 20px;
+        text-transform: uppercase;
+        width: max-content;
+        display: none;
+    }
+    
+    .Categoria-menu-link{
+        color: white;
+        text-decoration: none;
+        padding: 2px 3px;
+        border-radius: 3px;
+        font-family: 'Poppins', sans-serif;
+        display: none;
+    
+    }
+    
+    .Categoria-menu-link:hover{
+        background-color: blueviolet;
+        transition: 0.5s;
+        display: none;
+    }
+    
+    .nav-categoria{
+        display: flex;
+        justify-content: space-around;
+    
+    
+        height: 40px;
+    
+        background-color: #3f0090;
+        display: none;
+    }
+    
+    .nav-toggle{
+        display: block;
+    
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+    
+}
 
 
