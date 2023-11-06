@@ -20,8 +20,7 @@ if (juegos.length === 0) {
                 edadImg: "https://www.globalratings.com/images/ESRB_T_68.png"
             },
             logo: "https://i.postimg.cc/DwgNPybz/logo1.png",
-            reembolso: "Disponible",
-            desarrolladora: "Epic Games",
+          
           
         },
         {
@@ -41,8 +40,7 @@ if (juegos.length === 0) {
                 edadImg: "https://www.globalratings.com/images/ESRB_E_68.png"
             },
             logo: "https://i.postimg.cc/qR9DvNW1/logo2.png",
-            reembolso: "Disponible",
-            desarrolladora: "Psyonix",
+           
           
         },
         {
@@ -62,8 +60,7 @@ if (juegos.length === 0) {
                 edadImg: "https://www.globalratings.com/images/ESRB_M_68.png"
             },
             logo: "https://i.postimg.cc/Xv1DtHLS/logo3.png",
-            reembolso: "Autoreembolsable",
-            desarrolladora: "Rockstar North",
+          
        
         },
         {
@@ -83,14 +80,13 @@ if (juegos.length === 0) {
                 edadImg: "https://www.globalratings.com/images/ESRB_E_68.png"
             },
             logo: "https://i.postimg.cc/WzgWF2vT/logo4.png",
-            reembolso: "Autoreembolsable",
-            desarrolladora: "Mojang",
+            
        
         },
         {
             id: 5,
             nombre: "League of Legends",
-            precio: "Gratis con compras dentro del juego",
+            precio: "$0",
             img: "https://i.postimg.cc/kG9cpsnx/img5.jpg",
             sinopsis: "League of Legends es un juego MOBA donde dos equipos compiten para destruir la base del otro.",
             imgCarrousel: {
@@ -104,14 +100,13 @@ if (juegos.length === 0) {
                 edadImg: "https://www.globalratings.com/images/ESRB_T_68.png"
             },
             logo: "https://i.postimg.cc/52nPF7ZY/logo5.png",
-            reembolso: "No disponible",
-            desarrolladora: "Riot Games",
+           
          
         },
         {
             id: 6,
             nombre: "Valorant",
-            precio: "Gratis con compras dentro del juego",
+            precio: "$0",
             img: "https://i.postimg.cc/7hVV8z6j/img6.jpg",
             sinopsis: "Valorant es un juego de disparos táctico en primera persona con personajes únicos y habilidades.",
             imgCarrousel: {
@@ -146,8 +141,7 @@ if (juegos.length === 0) {
                 edadImg: "https://www.globalratings.com/images/ESRB_M_68.png"
             },
             logo: "https://i.postimg.cc/RCHbbTny/logo7.png",
-            reembolso: "Autoreembolsable",
-            desarrolladora: "FromSoftware",
+           
          
         },
         {
@@ -167,8 +161,7 @@ if (juegos.length === 0) {
                 edadImg: "https://www.globalratings.com/images/ESRB_T_68.png"
             },
             logo: "https://i.postimg.cc/28NXpBQ6/logo8.png",
-            reembolso: "Disponible",
-            desarrolladora: "Insomniac Games",
+           
         
         },
         {
@@ -188,15 +181,14 @@ if (juegos.length === 0) {
                 edadImg: "https://www.globalratings.com/images/ESRB_T_68.png"
             },
             logo: "https://i.postimg.cc/Dw2j0kY3/logo9.png",
-            reembolso: "Disponible",
-            desarrolladora: "Square Enix",
+          
        
         },
         {
             id: 10,
             nombre: "Mortal Kombat",
             precio: "$49.99",
-            img: "https://i.postimg.cc/NjrHRTtY/img9.jpg",
+            img: "https://i.postimg.cc/xTXJSHcH/img10.png",
             sinopsis: "Mortal Kombat es un juego de lucha brutal con personajes únicos y movimientos especiales.",
             imgCarrousel: {
                 img1: "https://i.postimg.cc/4ynCT3xN/header.jpg",
@@ -209,8 +201,7 @@ if (juegos.length === 0) {
                 edadImg: "https://www.globalratings.com/images/ESRB_M_68.png"
             },
             logo: "https://i.postimg.cc/xTGp9T5P/logo10.png",
-            reembolso: "Autoreembolsable",
-            desarrolladora: "NetherRealm Studios",
+           
         
         }
     ];
