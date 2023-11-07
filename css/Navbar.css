@@ -12,6 +12,7 @@ body {
 
 .header{
     background-color: #01042d;
+    position: sticky;
     height: 96px;
     width: 100%;
     top: 0;

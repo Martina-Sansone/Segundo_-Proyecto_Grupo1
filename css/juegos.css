@@ -1,17 +1,17 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    }
 
-.body{
-    font-family: sans-serif;
-    background-color: #01042d;
 }
 
-.main{
+.body{
     background-color: #01042d;
+    font-family: 'Poppins', sans-serif;
+
+
 }
 
 .container{
@@ -19,11 +19,32 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    max-width: 1100px;
+    max-width: 1300px;
     flex-wrap: wrap;
     background-color: #23275D;
     border-radius: 4%;
-    padding: 20px;
+}
+
+.section-buscador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.input{
+    width: 50vw;
+    height: auto;
+    padding: 10px;
+    outline: none;
+    border: 5px solid #3f0090;
+    font-weight: 600;
+    background-color: #002754;
+}
+
+
+.filtro{
+    display: none;
 }
 
 .articulo{
@@ -108,50 +129,6 @@
     display: flex;
     justify-content: center;
 
-}
-
-
-
-.box p{
-    text-align: justify;
-}
-
-.Sub-titulo{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-size: larger;
-
-}
-
-.container-footer{
-    width: 100%;
-    margin: auto;
-    flex-wrap: wrap;
-    background-color: #3f0090;
-}
-
-.col{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-}
-
-.CopyRight{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-
-.container-carousel{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    max-width: 1100px;
-    flex-wrap: wrap;
-    background-color: #23275D;
 }
 
 .pie-pagina{
@@ -261,22 +238,3 @@
     }
 }
 
-.section-buscador{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.input{
-    width: 50vw;
-    padding: 10px;
-    outline: none;
-    border: 5px solid #3f0090;
-    font-weight: 600;
-}
-
-
-.filtro{
-    display: none;
-}
