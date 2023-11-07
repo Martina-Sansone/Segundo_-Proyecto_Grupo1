@@ -2,60 +2,83 @@
 <html lang="es">
 
 <head>
-    <link rel="icon" href="" type="image/x-icon">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Martina Sansone, Benjamin Zelaya, Ignacio Fernandez, German Kreibohm">
-    <meta name="description" content="Web venta juegos online">
-    <meta name="keywords" content=" juegos gamer venta gamers play online">
-    <title>Panel Admin</title>
-    <link rel="shortcut icon" href="https://postimg.cc/B8JmY4DC" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../html/admin.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../html/juegosadmin.html">Añadir Producto</a>
-                    </li>
-        
-                    <li class="nav-item">
-                      <a class="nav-link" href="./usersAdmin.html">Añadir Usuario</a>
-                    </li>
-                  </ul>
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" id="idLogout">Cerrar Sesion</a>
-                    </li>
-        
-        
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </header>
+  <link rel="icon" href="" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Martina Sansone, Benjamin Zelaya, Ignacio Fernandez, German Kreibohm">
+  <meta name="description" content="Web venta juegos online">
+  <meta name="keywords" content=" juegos gamer venta gamers play online">
+  <title>Panel Admin</title>
+  <link rel="shortcut icon" href="https://postimg.cc/B8JmY4DC" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../ADMIN/Admin.css">
+</head>
 
-          <footer>
-        
-          </footer>
-        
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="../js/admin.js"></script>
-    </body>
-    </html>
+<body class="background">
+  <header>
+    <nav class="navbar navbar-expand-lg nav-color fw-bold">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://i.postimg.cc/wTqP9wyw/logo-gamevault.jpg" alt="" width="150px">
+        </a>
+
+        <button class="navbar-toggler background" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+          <ul class="navbar-nav me-auto mb-0 mb-md-2 mb-lg-0 ms-4">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./InicioAdmin.html">Admin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./JuegosAdmin.html" aria-disabled="true">  Añadir Juego</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./UsuariosAdmin.html" aria-disabled="true">Añadir Usuario</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-4 ms-lg-0">
+            <li class="nav-item">
+              <button class="nav-link text-white" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Cerrar Sesion <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                </svg></button>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg nav-color fw-bold">
+
+    </nav>
+    <div class="navbar-line"></div>
+  </header>
+
+  <main class="mt-5">
+    <h2>Hola Administrador</h2>
+    <h4>Productos destacados</h4>
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-sm-12 col-md-6 cardsContainer text-center" id="cardsContainer"></div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="/js/admin.js"></script>
+</body>
+
+</html>
