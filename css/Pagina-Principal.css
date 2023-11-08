@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+
+.body{
+    font-family: sans-serif;
+    background-color: #01042d;
+}
+
+
+.main{
+    background-color: #01042d;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    background-color: #23275D;
+    border-radius: 4%;
+    padding: 20px;
+}
+
+.juego-card {
+    background-color: #3f0090;
+    border: 1px solid #3f0090;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.juego-card h2 {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cuenta-regresiva {
+    font-size: 36px;
+    margin: 10px 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.articulo{
+    width: 100%;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    
+}
+.articulo:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card-img-top{
+    width: 100%;
+    height: 210px;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.card-img-top img{
+    width: 110%;
+}
+
+.articulo .contenido{
+    padding: 5px;
+    color: white;
+    background-color: #001994;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.card-text{
+    line-height: 1;
+    color: #68FF00;
+    font-size: medium;
+}
+
+.card-title{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+.descrip{
+    width: 100%;
+    height: 70px;
+}
+
+.descrip-desde{
+    line-height: 1,5;
+    color: grey;
+    font-size: small;
+}
+
+.precio{
+    color: white;
+    line-height: 0,1;
+    font-size: larger;
+    
+}
+
+.favorito{
+    display: flex;
+    color: grey;
+    font-size: small;
+}
+
+.vinculo{
+    text-decoration: none;
+}
+
+.titulo{
+    color: white;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.box p{
+    text-align: justify;
+}
+
+.Sub-titulo{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+
+}
+
+.container-footer{
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: #3f0090;
+}
+
+.col{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.CopyRight{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.container-carousel{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    background-color: #23275D;
+    z-index: 1;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #3f0090;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .footer-box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .footer-box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .footer-box .sobre-vault{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.pie-pagina .grupo-1 .footer-box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pie-pagina .grupo-1 .footer-box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #23275D;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #3f0090;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #23275D;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.apps{
+    width: 100%;
+    height: 100%;
+}
+
+.apps-section{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.apps img{
+    width: 175px
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+.section-buscador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.input{
+    width: 50vw;
+    padding: 10px;
+    outline: none;
+    border: 5px solid #3f0090;
+    font-weight: 600;
+}
+
+
+.filtro{
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.modal.mostrar {
+    display: block;
+}
+
+.modal-contenido {
+    background-color: #3f0090;
+    margin: 15% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transform: scale(0); 
+    transition: transform 0.5s; 
+}
+
+.modal.mostrar .modal-contenido {
+    transform: scale(1); 
+}
+
+.cerrar {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+

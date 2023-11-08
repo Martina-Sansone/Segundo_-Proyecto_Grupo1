@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.fuenteTexto{
+    font-family: 'Poppins', sans-serif;
+}
+
+.btnPagAnt{
+    background-color: #3f0090;
+    border: #3f0090;
+    color: white;
+}
+
+.aPagAnt{
+    text-decoration: none;
+}
+
+:hover .aPagAnt{
+    color: white;
+}
+
+
+/* Estilos pagina princpal hero */
+/* hover zoom */
+.carousel-inner img {
+    transition: transform 0.3s ease;
+  }
+
+  .carousel-inner img:hover {
+    transform: scale(1.04);
+  }
+
+
+/* /* Hover color  */
+  
+  .carousel-inner img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.carousel-inner:hover img {
+	opacity: .9;
+}
+
+.carousel-inner {
+    position: relative;
+  }
+  
+  .carousel-inner h2 {
+    position: absolute;
+    top: 1%;
+    left: 80%;
+    transform: translate(-50%, -250%);
+    color: white; 
+    text-align: center;
+    margin: 0; 
+    z-index: 1; 
+  }
+  .titulo-largo {
+    font-size: 2.1em;
+  }
+  .titulo-corto{
+    font-size: 3em;
+  }
+
