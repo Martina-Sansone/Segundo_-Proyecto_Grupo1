@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Martina Sansone, Benjamin Zelaya, Ignacio Fernandez, German Kreibohm">
+    <meta name="description" content="Web venta juegos online">
+    <meta name="keywords" content=" juegos gamer venta gamers play online">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito-admi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://postimg.cc/B8JmY4DC" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/admicarrito.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Carrito</h1>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="añadir">
+               <h2>añadir</h2>
+               <form>
+                  <label>Nombre del Producto</label>
+                  <input type="text" id="productoAñadir" name="nombredelProducto">
+
+                  <label>Valor del Producto</label>
+                  <input type="number" id="ValorAñadir" >
+
+                  <label>Existencia</label>
+                  <input type="number" id="existenciaAñadir" >
+
+                  <label>URL imagen</label>
+                  <input type="text" id="imagenAñadir" >
+
+                  <input class="button" type="button" id="botonAñadir" value="Añadir" >
+         </div>
+               </form>
+               <div class="editar">
+                <h2>editar</h2>
+                <form>
+                    <label>Nombre del producto</label>
+                    <select id="productoEditar">
+                     <option value="">---</option>
+                    </select>
+
+                    <label>Atributo</label>
+                    <select id="atributoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label>Nuevo valor</label>
+                    <input type="text" id="nuevoAtributo">
+
+                    <input class="button" type="button" id="botonEditar" value="Editar">
+                </form>
+               </div>
+
+               <div class="eliminar">
+                <h2>Eliminar</h2>
+                <form>
+                    <label>Nombre del Producto</label>
+                    <select id="productoEliminar">
+                      <option value="---"></option>
+                    </select>
+                    <input class="button" type="button" id="botonEliminar" value="Eliminar" >
+                </form>
+               </div>
+            </div>
+
+            <div class="contenedorMensaje">
+                <div id="mensaje"></div>
+            </div>
+
+            <div class="contenedorProductos">
+                <h2>Productos</h2>
+                <div class="mostrarProductos" id="mostrarProductos"></div>
+            </div>
+        </div>
+    </main>
+    
+
+
+
+
+
+
+  <script src="../admin-js/carritoadmi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
