@@ -32,7 +32,7 @@ const enviarFormI = (ev) => {
         if(usuarioexist[0].contrasenia === contraseniaI){
             usuarioexist[0].login = true
             localStorage.setItem('usuarios', JSON.stringify(usuarios))
-
+            localStorage.setItem('usuario', JSON.stringify(usuarioexist[0]))
             if (usuarioexist[0].rol === 'admin') {
                 location.href='./html/Admin.html'
             }else{

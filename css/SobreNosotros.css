@@ -434,3 +434,25 @@
     z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
 }
 
+
+.nav-color{
+    background-color: #01042d;
+}
+
+.btn-gamevault{
+    background-color: #3f0090;
+  }
+  
+  .texto-fuente{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .form-check-input:checked{
+    background-color: #3f0090;
+    border: #3f0090;
+  }
+  
+    .background{
+      background-color:#3f0090;
+    }
+

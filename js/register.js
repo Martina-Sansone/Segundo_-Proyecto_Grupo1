@@ -66,13 +66,13 @@ const enviarForm = (ev) => {
                     email: emailR,
                     contrasenia: contraseniaR,
                     rol: 'usuario',
-                    login: false
+                    login: true
                 }
 
                 usuarios.push(nuevoUsuario)
 
                 localStorage.setItem('usuarios', JSON.stringify(usuarios) )
-
+                localStorage.setItem('usuario', JSON.stringify(nuevoUsuario))
                 setTimeout(() => {
                     location.href = '../html/inicio.html'
                 }, 1000)
