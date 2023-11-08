@@ -14,56 +14,79 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="#">
     <link rel="stylesheet" href="/css/SobreNosotros.css">
+    <script defer src="/js/Navbar.js"></script>
     <script src="https://kit.fontawesome.com/0d0ec4d2f5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+
+    <header class="header">
+        <div class="Navbar">
+            <nav class="nav">
+                <a href="/html/inicio.html" class="logo"><img
+                        src="https://trello.com/1/cards/6538100308a0d0be788774d6/attachments/6538be74da8b4bae89c9c1af/previews/6538be74da8b4bae89c9c3c5/download/uuid%3DB6FAEB13-BB1A-4180-90FC-78A255BE5148%26library%3D1%26type%3D1%26mode%3D1%26loc%3Dtrue%26cap%3Dtrue.jpeg.jpg"
+                        alt="logo de pagina" width="200px">
+                </a>
+                <button class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+
+                <ul class="nav-menu">
+
+
+                    <li class="nav-menu-item"><a href="/html/favoritos.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="35px" height="35" fill="currentColor" class="nav-menu-link" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                            </svg></a></li>
+                    <li class="nav-menu-item"><a href="/html/carrito.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="35px" height="35" fill="currentColor" class="nav-menu-link" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg></button></a></li>
+                    <li class="nav-menu-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="35px"
+                                height="35" fill="currentColor" class="nav-menu-link" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                            </svg></a></li>
+                    <li class="nav-menu-item-categoria"><a href="/html/inicio.html" class="nav-menu-link">Inicio</a>
+                    </li>
+                    <li class="nav-menu-item-categoria"><a href="/html/Juegos.html" class="nav-menu-link">Juegos</a>
+                    </li>
+                    <li class="nav-menu-item-categoria"><a href="/html/carrito.html" class="nav-menu-link">Compras</a>
+                    </li>
+                    <li class="nav-menu-item-categoria"><a href="/html/favoritos.html"
+                            class="nav-menu-link">Favoritos</a>
+                    </li>
+                    <li class="nav-menu-item-categoria"><a href="/html/SobreNosotros.html" class="nav-menu-link">Sobre
+                            Nosotros</a></li>
+                    <li class="nav-menu-item-categoria"><a href="#" class="nav-menu-link">Galeria</a></li>
+                    <li class="nav-menu-item-categoria"><a href="/html/Contacto.html" class="nav-menu-link">Contacto</a>
+                    </li>
+                    <li class="nav-menu-item-categoria"><a href="#" class="nav-menu-link">Perfil</a></li>
+                    <li class="nav-menu-item-categoria"><a href="#" class="nav-menu-link">Cerrar Session</a></li>
+                    <li class="nav-menu-item"><a href="" class="nav-menu-link">Cerrar Session</a></li>
+
+
+                </ul>
+            </nav>
+            <nav class="nav-categoria">
+                <ul class="Categoria ">
+                    <li class="Categoria-menu">
+                        <a href="/html/inicio.html" class="Categoria-menu-link">Inicio</a>
+                        <a href="/html/Juegos.html" class="Categoria-menu-link">Juegos</a>
+                        <a href="/html/SobreNosotros.html" class="Categoria-menu-link">Sobre Nosotros</a>
+                        <a href="/html/Contacto.html" class="Categoria-menu-link">Contacto</a>
+                        <a href="#" class="Categoria-menu-link">Galeria</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
 
     </header>
     <main class="main">
-        <div class="container ">
+        <div class="container mt-4">
 
 
             <section class="box">
@@ -196,7 +219,7 @@
             </section>
 
         </div>
-    </main >
+    </main>
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="footer-box">
@@ -211,9 +234,9 @@
                 <h2>SOBRE GAMEVAULT</h2>
                 <a href="/html/SobreNosotros.html" class="sobre-vault">Nosotros</a>
                 <a href="/html/Contacto.html" class="sobre-vault">Contacto</a>
-                <a href="/html/Contacto.html" class="sobre-vault" >Ayuda</a>
-                <a href="/html/SobreNosotros.html" class="sobre-vault" >Comunidad</a>
-                <a href="/html/error404.html" class="sobre-vault" >Politica de Devoluciones</a>
+                <a href="/html/Contacto.html" class="sobre-vault">Ayuda</a>
+                <a href="/html/SobreNosotros.html" class="sobre-vault">Comunidad</a>
+                <a href="/html/error404.html" class="sobre-vault">Politica de Devoluciones</a>
             </div>
             <div class="footer-box">
                 <h2>SIGUENOS</h2>
@@ -229,8 +252,10 @@
                 <h2>DESCARGA NUESTRA APP</h2>
                 <div class="apps">
                     <section class="apps-section">
-                        <a href="https://play.google.com/store/games?hl=es_AR&gl=US"><img src="https://cdn.eneba.com/mobile/v1/appAndroidCTA.svg" alt=""></a>
-                        <a href="https://www.apple.com/la/app-store/"><img src="https://cdn.eneba.com/mobile/v1/appAppleCTA.svg" alt=""></a>
+                        <a href="https://play.google.com/store/games?hl=es_AR&gl=US"><img
+                                src="https://cdn.eneba.com/mobile/v1/appAndroidCTA.svg" alt=""></a>
+                        <a href="https://www.apple.com/la/app-store/"><img
+                                src="https://cdn.eneba.com/mobile/v1/appAppleCTA.svg" alt=""></a>
                     </section>
                 </div>
             </div>
