@@ -102,7 +102,7 @@ tBodyJuegosAdmin.innerHTML = juegos.map((juego) =>
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-outline-success" onclick="destacarJuego(${juego.id})">Destacar</button>
+                <button class="btn btn-outline-success" onclick="juegoDestacado(${juego.id})">Destacar</button>
             </td>
         </tr>
     </div>
@@ -240,8 +240,9 @@ const juegoDestacado = (idJuego) => {
             if (confirmCambioDest) {
 
                 const juegoFilter = juegos.filter((juego) => juego.id === idJuego)
-                botellaDest = botFilter
-                localStorage.setItem('botellaDest', JSON.stringify(juegoFilter))
+                juegoDest = juegoFilter
+                localStorage.setItem('juegoDest', JSON.stringify(juegoFilter))
+                alert("se cambio el juego destacado")
             }
 
         } else { alert('este juego esta destacado') }
@@ -251,6 +252,7 @@ const juegoDestacado = (idJuego) => {
         const juegoFilter = juegos.filter((juego) => juego.id === idJuego)
         juegoDest.push(juegoFilter[0])
         localStorage.setItem('juegoDest', JSON.stringify(juegoDest))
+        alert("destacaste este juego")
 
     }
 }
