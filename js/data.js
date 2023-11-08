@@ -101,8 +101,9 @@ if (juegos.length === 0) {
                 nombre: "Final Fantasy X",
                 img: "https://i.postimg.cc/NjrHRTtY/img9.jpg",
                 precio: "$29,99",
-                sinopsis: "Alto juego de gays",
-                img2: "https://cdn.shortpixel.ai/spai/q_glossy+ret_img+to_auto/www.slantmagazine.com/wp-content/uploads/2015/06/finalfantasyxx2hdremaster.jpg" ,
+                sinopsis: "Final Fantasy X es un RPG desarrollado y publicado por la compañía Squaresoft para el sistema PlayStation 2, llegando a Europa en 2002; es la décima entrega de la serie Final Fantasy,",
+                img1: "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/02/01/final-fantasy-x-hd-remaster.jpeg",
+                img2: "https://fotografias.larazon.es/clipping/cmsimages01/2019/08/21/96E37DD8-35E1-4C6D-AB7B-93C5F4EF9174/98.jpg?crop=1031,580,x0,y0&width=1900&height=1069&optimize=low&format=webply" ,
                 img3: "https://i.postimg.cc/RVQ1zL2h/ss-8fc00bc1b853f17adb5378ad012ef127098affad-600x338.jpg",
                 logo: "https://i.postimg.cc/Dw2j0kY3/logo9.png",
     
@@ -112,13 +113,14 @@ if (juegos.length === 0) {
             {
                 id: 10,
                 nombre: "Mortal Kombat",
-                img: "https://i.postimg.cc/xTGp9T5P/logo10.png",
+                img: "https://i.postimg.cc/xTXJSHcH/img10.png",
                 precio: "$49,99",
                 sinopsis: "Mortal Kombat es un juego de lucha brutal con personajes únicos y movimientos especiales.",
                 img1: "https://i.postimg.cc/4ynCT3xN/header.jpg",
                 img2: "https://i.postimg.cc/qMdcY5bW/ss-6c7ece776d88f1a7252a08321dbdf1c9ee0e48e9-600x338.jpg" ,
                 img3: "https://i.postimg.cc/br57YjZ0/ss-4fa4fd2ea1b7ff6c6b699dc9eb717986f80845a4-600x338.jpg",
-                logo: "https://i.postimg.cc/NGPqkRdy/ss-aa70f659fe14e3c07033474249096b60c17021b3-600x338.jpg",
+                logo: "https://i.postimg.cc/xTGp9T5P/logo10.png",
+             
     
             },
 
