@@ -81,19 +81,21 @@
           </div>
           <form class="fw-bold">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label text-white">Correo electronico</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" minlength="10" maxlength="50">
+              <label for="email-i" class="form-label text-white ">Correo electronico</label>
+              <input type="email" class="form-control fw-bold" id="email-i" name="emailI"  minlength="10" maxlength="50">
             </div>
             <div class=" mb-4 mb-md-3">
-              <label for="exampleInputPassword1" class="form-label text-white">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" minlength="5" maxlength="30">
+              <label for="contrasenia-i" class="form-label text-white">Contraseña</label>
+              <input type="password" class="form-control" id="contrasenia-i" minlength="5" maxlength="30" name="contraseniaI">
             </div>
             <div class="container-fluid mb-3">
               <div class="row">
                 <div class="col-12 col-md-5 mx-md-auto px-0"><button type="submit"
-                    class="btn btn-gamevault text-white shadow w-100 fw-bold">Iniciar Sesion</button></div>
+                    class="btn btn-gamevault text-white shadow w-100 fw-bold" id="enviar-i">Iniciar Sesion</button></div>
               </div>
+              
             </div>
+            <div id="campo-error-i" class="form-text mb-2 text-center"><Small class="text-danger ">EL CORREO ELECTRONICO O LA CONTRASEÑA NO SON CORRECTOS</Small></div>
               <button class="nav-link text-white mb-2 mx-auto" type="button" data-bs-toggle="modal"
               data-bs-target="#exampleModal3">¿Olvidaste tu contraseña?</button>
               <button class="nav-link text-white mx-auto" type="button" data-bs-toggle="modal"
@@ -124,25 +126,27 @@
 
           <form class="fw-bold">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label text-white">Correo electronico</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" minlength="10" maxlength="50">
+              <label for="email-r" class="form-label text-white">Correo electronico</label>
+              <input type="email" class="form-control fw-bold" id="email-r" aria-describedby="emailHelp" minlength="10" maxlength="50" name="emailR">
             </div>
             <div class="mb-3 mb-4 mb-md-3">
-              <label for="exampleInputPassword1" class="form-label text-white">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" minlength="5" maxlength="30">
+              <label for="contrasenia-r" class="form-label text-white">Contraseña</label>
+              <input type="password" class="form-control" id="contrasenia-r" minlength="5" maxlength="30" name="contraseniaR">
             </div>
             <div class="mb-3 mb-4 mb-md-3">
-              <label for="exampleInputPassword1" class="form-label text-white">Repetir Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" minlength="5" maxlength="30">
+              <label for="rcontrasenia-r" class="form-label text-white">Repetir Contraseña</label>
+              <input type="password" class="form-control" id="rcontrasenia-r" minlength="5" maxlength="30" name="rContraseniaR">
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label text-white" for="exampleCheck1">Aceptas los terminos y condiciones</label>
+            <div class="mb-3">
+              <p class="text-white text-center">Al registrarte aceptas los <a href="./html/error404.html">Terminos y Condiciones</a> </p>
             </div>
+            <div id="campo-error-r" class="form-text mb-2 text-center"><Small class="text-danger ">LAS CONTRASEÑAS NO COINCIDEN</Small></div>
+            <div id="campo-error-r2" class="form-text mb-2 text-center"><Small class="text-danger ">ESTE CORREO YA TIENE UNA CUENTA VINCULADA</Small></div>
+            <div id="campo-error-r3" class="form-text mb-2 text-center"><Small class="text-danger ">EL FORMATO DEL CORREO NO ES VALIDO</Small></div>
             <div class="container-fluid">
               <div class="row">
                 <div class="col-12 col-md-4 ms-md-auto px-0 mb-3"><button type="submit"
-                    class="btn btn-gamevault text-white shadow w-100 fw-bold">Registrarse</button></div>
+                    class="btn btn-gamevault text-white shadow w-100 fw-bold" id="enviar-r">Registrarse</button></div>
               </div>
             </div>
             <button class="nav-link text-white mx-auto" type="button" data-bs-toggle="modal"
@@ -206,7 +210,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+
     <script src="./js/data.js"></script>
+    <script src="./js/register.js"></script>
+    <script src="./js/login.js"></script>
+
 </body>
 
 </html>

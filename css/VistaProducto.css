@@ -42,9 +42,10 @@ list-style: none;
     margin-bottom: 8px; /* Espacio entre elementos de la lista */
   }
   
-
-    border-bottom: 1px solid #ccc; 
-    padding-bottom: 8px; 
-    margin-bottom: 8px; 
-  }
+  @media (max-width: 762px) {
+    .cardedad{
+        width: 50%; /* O el porcentaje que desees */
+        order: 1;
+    }
+}
 
