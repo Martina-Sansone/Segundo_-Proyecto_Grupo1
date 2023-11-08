@@ -102,13 +102,8 @@ tBodyJuegosAdmin.innerHTML = juegos.map((juego) =>
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <button class="btn btn-outline-success" onclick="Juegodestacado(${juego.id})">Destacar</button>
-                </td>
-=======
                 <button class="btn btn-outline-success" onclick="juegoDestacado(${juego.id})">Destacar</button>
             </td>
->>>>>>> 69c2ad083c4ac8293ecf62257f4a21da3a383f81
         </tr>
     </div>
     `
@@ -246,12 +241,8 @@ const juegoDestacado = (idJuego) => {
 
                 const juegoFilter = juegos.filter((juego) => juego.id === idJuego)
                 juegoDest = juegoFilter
-
-                localStorage.setItem('botellaDest', JSON.stringify(juegoFilter))
-
                 localStorage.setItem('juegoDest', JSON.stringify(juegoFilter))
                 alert("se cambio el juego destacado")
-
             }
 
         } else { alert('este juego esta destacado') }
@@ -265,9 +256,6 @@ const juegoDestacado = (idJuego) => {
 
     }
 }
-
-
-
 
 inputNombreJuego.forEach(element => {
     element.addEventListener('input', changeValues)
