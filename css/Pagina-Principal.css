@@ -176,6 +176,7 @@
     max-width: 1100px;
     flex-wrap: wrap;
     background-color: #23275D;
+    z-index: 1;
 }
 
 .pie-pagina{
