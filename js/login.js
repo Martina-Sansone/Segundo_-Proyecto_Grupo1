@@ -34,7 +34,7 @@ const enviarFormI = (ev) => {
             localStorage.setItem('usuarios', JSON.stringify(usuarios))
             localStorage.setItem('usuario', JSON.stringify(usuarioexist[0]))
             if (usuarioexist[0].rol === 'admin') {
-                location.href='./html/Admin.html'
+                location.href='./html/InicioAdmin.html'
             }else{
                 location.href='./html/inicio.html'
             }
