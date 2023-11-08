@@ -22,20 +22,22 @@ body {
 
 .Navbar{
     position: relative;
+    
+    
 }
 .Navbar.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega sombra cuando la barra de navegación es sticky */
-    background-color: #01042d; /* Puedes cambiar el color de fondo si lo deseas */
-    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    background-color: #01042d; 
 }
 
 
 .nav{
     display: flex;
     justify-content: space-between;
+    
 
     height: 80px;
 }
