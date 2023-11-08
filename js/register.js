@@ -2,6 +2,13 @@ const inputMailR = document.getElementById('email-r')
 const inputContraseniaR = document.getElementById('contrasenia-r')
 const inputRContraseniaR = document.getElementById('rcontrasenia-r')
 const enviarR = document.getElementById('enviar-r')
+const campoErrorRc =  document.getElementById('campo-error-r')
+const campoErrorRu =  document.getElementById('campo-error-r2')
+const campoErrorRcorreo =  document.getElementById('campo-error-r3')
+
+campoErrorRc.classList.add('d-none')
+campoErrorRu.classList.add('d-none')
+campoErrorRcorreo.classList.add('d-none')
 
 const usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
 
@@ -29,20 +36,30 @@ const objFormulario = {
 const valoresFormulario = (ev) => {
     const { name, value } = ev.target
     objFormulario[name] = value
+    campoErrorRc.classList.add('d-none')
+    campoErrorRu.classList.add('d-none')
+    campoErrorRcorreo.classList.add('d-none')
 }
 
 const enviarForm = (ev) => {
     ev.preventDefault()
-    const { emailR, contraseniaR, rContraseniaR, checkR} = objFormulario
+    const { emailR, contraseniaR, rContraseniaR} = objFormulario
+    const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailR)
 
+    if (regex == false){
+        return campoErrorRcorreo.classList.remove('d-none')
+    }
+
+    console.log(regex)
     if (emailR && contraseniaR && rContraseniaR) {
         if (contraseniaR === rContraseniaR) {
             if(contraseniaR === rContraseniaR) {
                 const usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
                 const usuarioexist = usuarios.filter((usuarioLS) => usuarioLS.email === emailR)
 
-                if(usuarioexist > 0){
-                    return alert("El Usuario ya existe")
+                if(usuarioexist.length > 0){
+                    return campoErrorRu.classList.remove('d-none')
+                    
                 }
                 const nuevoUsuario = {
                     id: usuarios.length > 0 ? usuarios[usuarios.length - 1].id + 1 : 1,
@@ -55,9 +72,13 @@ const enviarForm = (ev) => {
                 usuarios.push(nuevoUsuario)
 
                 localStorage.setItem('usuarios', JSON.stringify(usuarios) )
+
+                setTimeout(() => {
+                    location.href = '../html/inicio.html'
+                }, 1000)
             }
         }else{
-            alert('las contraseñas no coinciden')
+            campoErrorRc.classList.remove('d-none')
         }
     }
 }

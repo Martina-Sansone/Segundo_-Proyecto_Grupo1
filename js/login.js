@@ -1,6 +1,9 @@
 const inputMailI = document.getElementById('email-i')
 const inputContraseniaI = document.getElementById('contrasenia-i')
 const enviarI = document.getElementById('enviar-i')
+const campoError = document.getElementById('campo-error-i')
+
+campoError.classList.add('d-none')
 
 const objFormularioI = {
     emailI: '',
@@ -10,6 +13,7 @@ const objFormularioI = {
 const valoresFormularioI = (ev) => {
     const { name, value } = ev.target
     objFormularioI[name] = value
+    campoError.classList.add('d-none')
 }
 
 const enviarFormI = (ev) => {
@@ -22,7 +26,7 @@ const enviarFormI = (ev) => {
         const usuarioexist = usuarios.filter((usuarioLS) => usuarioLS.email === emailI)
 
         if (usuarioexist.length === 0) {
-            return alert("usuario y/o contraseña incorrecto")
+            return campoError.classList.remove('d-none')
         }
 
         if(usuarioexist[0].contrasenia === contraseniaI){
@@ -36,7 +40,7 @@ const enviarFormI = (ev) => {
             }
 
         }else{
-            alert("usuario y/o contraseña incorrecto")
+            campoError.classList.remove('d-none')
         }
     }
 }
