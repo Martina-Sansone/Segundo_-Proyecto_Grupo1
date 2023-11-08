@@ -1,11 +1,12 @@
-const botellas = JSON.parse(localStorage.getItem('juegosDest')) || [];
+const juegos = JSON.parse(localStorage.getItem('juegoDest')) || [];
+cardsInicioAdmin=document.getElementById("cardsContainer")
 
 cardsInicioAdmin.innerHTML = juegos.map((juego) => `<div class="card mb-3">
-<img src="${juego.imgJuego}" class="card-img-top" alt="${juego.nombreJuego}">
-lass="card-text">Precio: ${juego.precioJuego}</p>
+<img src="${juego.img}" class="card-img-top" alt="${juego.nombre}">
+class="card-text"Precio: ${juego.precio}</p>
     <!-- Otros campos del juego que quieras mostrar -->
 </div>       <div class="card-body">
-    <h5 class="card-title">${juego.nombreJuego}</h5>
-    <p class="card-text">${juego.sinopsisJuego}</p>
+    <h5 class="card-title">${juego.nombre}</h5>
+    <p class="card-text">${juego.sinopsis}</p>
     <p c
-</div>` ).join('')
+</div> ).join('')`)
